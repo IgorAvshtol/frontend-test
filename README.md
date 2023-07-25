@@ -6,3 +6,4 @@
 - Clicking on the column headings sorts the entries (largest to smallest or alphabetically).
 - You can enter any value in the search bar, and the table will display the record in which this value is present. Search across all columns.
 - The table page should be rendered in the browser's URL.
+['https://frontend-test-self.vercel.app/']
