@@ -1,0 +1,66 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "semi": "off",
+        "@typescript-eslint/semi": [
+            "error"
+        ],
+        "import/extensions": 0,
+        "no-nested-ternary": 0,
+        "@typescript-eslint/no-var-requires": 1,
+        "@typescript-eslint/no-empty-interface": [
+            "error",
+            {
+                "allowSingleExtends": true
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "react/jsx-props-no-spreading": "off",
+        "jsx-quotes": [
+            "error",
+            "prefer-single"
+        ],
+        "import/no-extraneous-dependencies": [
+            "off",
+            {
+                "peerDependencies": true
+            }
+        ],
+        "import/no-cycle": 0,
+        "@typescript-eslint/naming-convention": 0,
+        "react/react-in-jsx-scope": "off",
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        "react/no-array-index-key": 1,
+        "no-restricted-syntax": 0,
+        "no-plusplus": 0,
+        "react/button-has-type": 0,
+        "react/require-default-props": 0,
+        "import/no-named-as-default": 0,
+        "no-param-reassign": 0,
+        "prefer-destructuring": [
+            "error",
+            {
+                "object": true,
+                "array": false
+            }
+        ],
+        "no-unsafe-optional-chaining": 0,
+        "react/destructuring-assignment": 0
+    },
+    "extends": [
+        "airbnb",
+        "airbnb-typescript"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    }
+}
