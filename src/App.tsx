@@ -59,8 +59,8 @@ function App() {
   }, [params]);
 
   const searchablePosts = useMemo(
-    () => posts.filter((post) => post.title.includes(searchableValue)
-          || post.body.includes(searchableValue)),
+    () => posts.filter((post) => post.title.toLowerCase().includes(searchableValue.toLowerCase())
+          || post.body.toLowerCase().includes(searchableValue.toLowerCase())),
     [posts, searchableValue],
   );
 
